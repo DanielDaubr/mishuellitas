@@ -158,6 +158,32 @@ header {
 }
 
 /* Servicios */
+
+.servicios .container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: center; /* Centrar elementos */
+}
+
+.servicio {
+    flex: 1 1 45%; /* Ocupa un 45% del ancho, se ajusta automáticamente */
+    max-width: 200px; /* Maximo ancho para evitar que se estire demasiado */
+    margin: 15px; /* Margen para separar servicios */
+    text-align: center; /* Centrar el texto */
+}
+
+.servicio img {
+    width: 100%; /* Hacer que las imágenes ocupen el ancho completo del contenedor */
+    height: auto; /* Mantener la proporción */
+}
+
+@media (max-width: 768px) {
+    .servicio {
+        flex: 1 1 100%; /* En pantallas pequeñas, cada servicio ocupa el 100% */
+        max-width: none; /* Sin máximo ancho para que ocupe todo el espacio */
+    }
+}
+
 .servicios {
     background-color: #f9f9f9;
     padding: 50px 0;
@@ -192,6 +218,32 @@ header {
 }
 
 /* Clientes Felices */
+
+/* Clientes Felices */
+.clientes-felices .container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    justify-content: center; /* Centrar elementos */
+}
+
+.cliente {
+    flex: 1 1 30%; /* Ocupa un 30% del ancho */
+    max-width: 150px; /* Maximo ancho para evitar que se estire demasiado */
+    margin: 15px; /* Margen para separar clientes */
+    text-align: center; /* Centrar el texto */
+}
+
+.cliente img {
+    width: 100%; /* Hacer que las imágenes ocupen el ancho completo del contenedor */
+    height: auto; /* Mantener la proporción */
+}
+
+@media (max-width: 768px) {
+    .cliente {
+        flex: 1 1 100%; /* En pantallas pequeñas, cada cliente ocupa el 100% */
+        max-width: none; /* Sin máximo ancho para que ocupe todo el espacio */
+    }
+}
 .clientes-felices {
     padding: 50px 0;
     text-align: center;
