@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 2px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Alinea el logo a la izquierda y el menú a la derecha */
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px; /* Ajusta el tamaño del logo si es necesario */
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+    padding: 30px 0;
+    background-color: #f9f9f9; /* Color de fondo opcional */
+}
+
+.sobre-nosotros .container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #00d4d4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    .sobre-nosotros .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .imagen img {
+        margin-top: 20px;
+    }
+}
+
+
+/* Sección Por qué elegirnos */
+.por-que-elegirnos {
+    padding: 100px 0;
+    background-color: #fff; /* Fondo blanco */
+}
+
+.por-que-elegirnos .container {
+    display: flex;
+    flex-wrap: wrap; /* Ajuste para pantallas pequeñas */
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.texto .precio h3 {
+    font-size: 2rem;
+    color: #00d4d4;
+    margin-bottom: 20px;
+}
+
+.texto .precio ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.texto .precio ul li {
+    margin-bottom: 10px;
+}
+
+.lista h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.lista ol {
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.lista ol li {
+    margin-bottom: 10px;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .por-que-elegirnos .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+}
+
+
+.servicios {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.servicios h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.servicios .servicio {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.clientes-felices {
+    padding: 50px 0;
+    text-align: center;
+}
+.cliente {
+    display: inline-block;
+    margin: 15px;
+}
+
+.cliente img {
+    height: 350px; /* Ajusta la altura que prefieras */
+    width: auto; /* Mantiene el ancho proporcional */
+    object-fit: cover; /* Asegura que la imagen se recorte sin distorsionar */
+}
+
+.clientes-felices h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.clientes-felices .cliente {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+.veterinarios-emprendedores {
+    background-color: #ffcc00;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto; /* Centrar el formulario */
+}
+
+form label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #00d4d4;
+    outline: none;
+}
+
+.cta {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #00d4d4;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: #00a0a0;
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 100%;
+    }
+}
+
+
+/* Estilos para la tabla de comercios adheridos */
+.adheridos {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.adheridos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+}
+
+thead {
+    background-color: #00d4d4;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+}
+
+tbody tr {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+}
+
+tfoot {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 1rem;
+    }
+}
