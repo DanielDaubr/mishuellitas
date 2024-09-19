@@ -14,7 +14,7 @@ body {
     padding: 15px;
 }
 
-/* Header */
+
 header {
     background-color: white;
     padding: 2px 0;
@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    flex-wrap: wrap; /* Permite que el menú se envuelva en pantallas pequeñas */
+    flex-wrap: wrap; 
 }
 
 .logo img {
@@ -41,15 +41,14 @@ header {
 @media (max-width: 768px) {
     .menu {
         display: flex;
-        flex-direction: column; /* Hacer que los enlaces del menú se apilen verticalmente en pantallas pequeñas */
+        flex-direction: column; 
         align-items: center;
     }
     .menu a {
-        margin: 10px 0; /* Agregar margen entre los enlaces del menú en pantallas pequeñas */
+        margin: 10px 0; 
     }
 }
 
-/* Sección Sobre Nosotros */
 .sobre-nosotros {
     padding: 30px 0;
     background-color: #f9f9f9;
@@ -103,7 +102,7 @@ header {
     }
 }
 
-/* Sección Por qué elegirnos */
+
 .por-que-elegirnos {
     padding: 100px 0;
     background-color: #fff; 
@@ -157,30 +156,30 @@ header {
     }
 }
 
-/* Servicios */
+
 
 .servicios .container {
     display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-    justify-content: center; /* Centrar elementos */
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 .servicio {
-    flex: 1 1 45%; /* Ocupa un 45% del ancho, se ajusta automáticamente */
-    max-width: 200px; /* Maximo ancho para evitar que se estire demasiado */
-    margin: 15px; /* Margen para separar servicios */
-    text-align: center; /* Centrar el texto */
+    flex: 1 1 45%; 
+    max-width: 200px;
+    margin: 15px;
+    text-align: center; 
 }
 
 .servicio img {
-    width: 100%; /* Hacer que las imágenes ocupen el ancho completo del contenedor */
-    height: auto; /* Mantener la proporción */
+    width: 100%; 
+    height: auto; 
 }
 
 @media (max-width: 768px) {
     .servicio {
-        flex: 1 1 100%; /* En pantallas pequeñas, cada servicio ocupa el 100% */
-        max-width: none; /* Sin máximo ancho para que ocupe todo el espacio */
+        flex: 1 1 100%; 
+        max-width: none;
     }
 }
 
@@ -208,40 +207,40 @@ header {
 
 @media (max-width: 768px) {
     .servicio {
-        width: 45%; /* Hacer las tarjetas de servicios más anchas en pantallas pequeñas */
+        width: 45%; 
         margin: 0 auto 20px;
     }
 
     .cliente {
-        width: 90%; /* Ajustar las imágenes de clientes en pantallas pequeñas */
+        width: 90%; 
     }
 }
 
-/* Clientes Felices */
 
-/* Clientes Felices */
+
+
 .clientes-felices .container {
     display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-    justify-content: center; /* Centrar elementos */
+    flex-wrap: wrap;
+    justify-content: center; 
 }
 
 .cliente {
-    flex: 1 1 30%; /* Ocupa un 30% del ancho */
-    max-width: 150px; /* Maximo ancho para evitar que se estire demasiado */
-    margin: 15px; /* Margen para separar clientes */
-    text-align: center; /* Centrar el texto */
+    flex: 1 1 30%;
+    max-width: 150px; 
+    margin: 15px; 
+    text-align: center; 
 }
 
 .cliente img {
-    width: 100%; /* Hacer que las imágenes ocupen el ancho completo del contenedor */
-    height: auto; /* Mantener la proporción */
+    width: 100%; 
+    height: auto; 
 }
 
 @media (max-width: 768px) {
     .cliente {
-        flex: 1 1 100%; /* En pantallas pequeñas, cada cliente ocupa el 100% */
-        max-width: none; /* Sin máximo ancho para que ocupe todo el espacio */
+        flex: 1 1 100%; 
+        max-width: none;
     }
 }
 .clientes-felices {
@@ -265,7 +264,6 @@ header {
     text-align: center;
 }
 
-/* Veterinarios y Emprendedores */
 .veterinarios-emprendedores {
     background-color: #ffcc00;
     padding: 50px 0;
@@ -279,14 +277,14 @@ footer {
     padding: 20px 0;
 }
 
-/* Estilos para el formulario de contacto */
+
 form {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 20px auto; /* Centrar el formulario */
+    margin: 20px auto; 
 }
 
 form label {
@@ -329,11 +327,11 @@ input:focus {
 
 @media (max-width: 768px) {
     form {
-        width: 90%; /* Hacer que el formulario ocupe casi todo el ancho en pantallas pequeñas */
+        width: 90%; 
     }
 }
 
-/* Estilos para la tabla de comercios adheridos */
+
 .adheridos {
     padding: 50px 0;
     background-color: #f9f9f9;
@@ -351,7 +349,7 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
     font-size: 1.2rem;
-    overflow-x: auto; /* Hacer que la tabla sea desplazable horizontalmente */
+    overflow-x: auto; 
 }
 
 thead {
@@ -385,6 +383,6 @@ tfoot {
     table {
         font-size: 1rem;
         display: block;
-        overflow-x: auto; /* Permitir el scroll horizontal para evitar que se corte en pantallas pequeñas */
+        overflow-x: auto; 
     }
 }
