@@ -22,12 +22,13 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: space-between; /* Alinea el logo a la izquierda y el menú a la derecha */
+    justify-content: space-between; 
     align-items: center;
+    flex-wrap: wrap; /* Permite que el menú se envuelva en pantallas pequeñas */
 }
 
 .logo img {
-    max-width: 150px; /* Ajusta el tamaño del logo si es necesario */
+    max-width: 150px; 
 }
 
 .menu a {
@@ -37,15 +38,26 @@ header {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column; /* Hacer que los enlaces del menú se apilen verticalmente en pantallas pequeñas */
+        align-items: center;
+    }
+    .menu a {
+        margin: 10px 0; /* Agregar margen entre los enlaces del menú en pantallas pequeñas */
+    }
+}
+
 /* Sección Sobre Nosotros */
 .sobre-nosotros {
     padding: 30px 0;
-    background-color: #f9f9f9; /* Color de fondo opcional */
+    background-color: #f9f9f9;
 }
 
 .sobre-nosotros .container {
     display: flex;
-    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
 }
@@ -81,7 +93,6 @@ header {
 }
 
 @media (max-width: 768px) {
-    /* Estilos para pantallas pequeñas */
     .sobre-nosotros .container {
         flex-direction: column;
         text-align: center;
@@ -92,23 +103,17 @@ header {
     }
 }
 
-
 /* Sección Por qué elegirnos */
 .por-que-elegirnos {
     padding: 100px 0;
-    background-color: #fff; /* Fondo blanco */
+    background-color: #fff; 
 }
 
 .por-que-elegirnos .container {
     display: flex;
-    flex-wrap: wrap; /* Ajuste para pantallas pequeñas */
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: flex-start;
-}
-
-.column {
-    flex: 1;
-    padding: 20px;
 }
 
 .texto .precio h3 {
@@ -141,7 +146,6 @@ header {
     margin-bottom: 10px;
 }
 
-/* Responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
     .por-que-elegirnos .container {
         flex-direction: column;
@@ -153,7 +157,7 @@ header {
     }
 }
 
-
+/* Servicios */
 .servicios {
     background-color: #f9f9f9;
     padding: 50px 0;
@@ -170,19 +174,32 @@ header {
     text-align: center;
 }
 
+.imagen img, .servicio img, .cliente img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+    .servicio {
+        width: 45%; /* Hacer las tarjetas de servicios más anchas en pantallas pequeñas */
+        margin: 0 auto 20px;
+    }
+
+    .cliente {
+        width: 90%; /* Ajustar las imágenes de clientes en pantallas pequeñas */
+    }
+}
+
+/* Clientes Felices */
 .clientes-felices {
     padding: 50px 0;
     text-align: center;
 }
+
 .cliente {
     display: inline-block;
     margin: 15px;
-}
-
-.cliente img {
-    height: 350px; /* Ajusta la altura que prefieras */
-    width: auto; /* Mantiene el ancho proporcional */
-    object-fit: cover; /* Asegura que la imagen se recorte sin distorsionar */
 }
 
 .clientes-felices h2 {
@@ -196,6 +213,7 @@ header {
     text-align: center;
 }
 
+/* Veterinarios y Emprendedores */
 .veterinarios-emprendedores {
     background-color: #ffcc00;
     padding: 50px 0;
@@ -259,10 +277,9 @@ input:focus {
 
 @media (max-width: 768px) {
     form {
-        width: 100%;
+        width: 90%; /* Hacer que el formulario ocupe casi todo el ancho en pantallas pequeñas */
     }
 }
-
 
 /* Estilos para la tabla de comercios adheridos */
 .adheridos {
@@ -282,6 +299,7 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
     font-size: 1.2rem;
+    overflow-x: auto; /* Hacer que la tabla sea desplazable horizontalmente */
 }
 
 thead {
@@ -314,5 +332,7 @@ tfoot {
 @media (max-width: 768px) {
     table {
         font-size: 1rem;
+        display: block;
+        overflow-x: auto; /* Permitir el scroll horizontal para evitar que se corte en pantallas pequeñas */
     }
 }
